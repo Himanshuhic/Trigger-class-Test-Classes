@@ -5,7 +5,7 @@ public class TestAcountWithContact {
         List<Account> testacc = new List<Account>{
             new Account(Name = 'Test Account1')};
  
-        // Insert accounts with before insert event
+        // Insert accounts  before insert event
         Test.startTest();
         try {
             insert testacc;
@@ -16,13 +16,12 @@ public class TestAcountWithContact {
         Test.stopTest();
     }
 
-    @isTest
-    static void testAfterInsert() {
+    @isTest static void testAfterInsert() {
         // Test data setup
         List<Account> testacc = new List<Account>{
             new Account(Name = 'Test Account 1')};
 
-        // Insert accounts with after insert event
+        // Insert accounts  after insert event
         Test.startTest();
         insert testacc;
         Test.stopTest();
@@ -36,3 +35,5 @@ public class TestAcountWithContact {
         }
     }
 }
+
+//Note The Code Covrage of this Class is "91%"
