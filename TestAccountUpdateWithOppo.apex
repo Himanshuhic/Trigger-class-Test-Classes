@@ -15,7 +15,7 @@ private class TestAccountUpdateWithOppo {
         CloseDate = Date.today());
         insert op;
 
-        // Here we Take the 30 days before date 
+        // Here we Take the 30 days before current datc 
        Datetime dt = Date.today() - 30;
         Test.startTest();
         ac.Name='UpdateTestAccount';

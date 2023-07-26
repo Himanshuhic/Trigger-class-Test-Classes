@@ -23,4 +23,3 @@ trigger TriggerCase on Case (before insert) {
 
 }
 
-// Note its code coverage is 100%
